@@ -1,0 +1,265 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    /* overflow-x: hidden; */
+}
+.navbar-brand{
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 2em;
+    font-weight: bold;
+    color:#fff;
+}
+.custom-nav .custom-nav-item a{
+    color:#fff !important;
+    border-radius: 10px;
+    /* border:solid #dc3445 1px; */
+}
+.custom-nav-item a:hover{
+    background-color: #dc3445;
+}
+.remove-vid-marg{
+    margin: 0px ;
+    padding: 0px;
+}
+.vid-parent{
+    position: relative;
+    
+}
+video{
+    width: 100%;
+    height: 100%;
+    /* transform: translateY(-100px); */
+}
+.vid-overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color:#225470 ;
+    z-index: 1;
+    opacity: 0.8;
+}
+.vid-content{
+    position: absolute;
+    text-align: center;
+    z-index: 2;
+    color: #ffff;
+    top:35%;
+    left:35%;
+}
+.vid-content .btn{
+    margin-top: 30px;
+    padding: 7px 25px;
+    font-weight: 700;
+    font-size: 18px;
+}
+.home .container-fluid{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.bottom-banner{
+    color: #fff;
+    padding: 10px;
+}
+.stripe {
+    background-image: linear-gradient(240deg,#ed213a,#93291e);
+    padding:3rem;
+    height:13rem;
+    margin-top:4rem;
+    transform: rotate(10deg);
+    z-index: -5;
+}
+/* Testimonial Section  */
+
+.testimonial-section {
+    /* background-color: #333; */
+    align-items: center;
+    justify-content: center;
+    height: 55vh;
+}
+
+.testimonial-section .carousel-item {
+    margin-top: 3rem;
+    padding: 10rem 3.125rem;
+    background-color: #fff;
+    border-radius: 0.9375rem;
+    text-align: center;
+}
+
+.testimonial-section .carousel-caption img {
+    border-radius: 50%;
+    padding: 0.3125rem;
+    width: 100px;
+    height: 100px;
+}
+
+.testimonial-section .carousel-item .carousel-caption p {
+    font-size: 1.3125rem;
+    line-height: 2.0625rem;
+    padding: 0 11% 0.625rem;
+    color: #000;
+}
+
+.testimonial-section .carousel-indicators {
+    bottom: -2.8125rem;
+}
+
+.testimonial-section .carousel-indicators button {
+    width: 15px;
+    height: 15px;
+    outline: none;
+    border-radius: 50%;
+    border: none;
+    margin-right: 1rem;
+    opacity: 0.09;
+    background-color: #000;
+}
+
+.testimonial-section .carousel-indicators button.active {
+ opacity:1;
+}
+
+
+
+
+
+/* ................................................................ */
+.navbar{
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding: 0 7%;
+} 
+.navbar .menu{
+    width: fit-content;
+    margin: 0;
+    padding: 0;
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: right;
+}
+.navbar .menu ul{
+    display: flex;
+    align-items: center;
+    justify-content: right;
+}
+
+
+/* ...................................header end */
+/* ................................... main hero  starts here*/
+.hero{
+    width: 100%;
+    overflow-x: hidden;
+    position: relative;
+}
+/* ........................... home starts here*/
+section{
+    width: 100%;
+    min-height: 90vh;
+}
+section.home{
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+
+/* ........................... courses starts here*/
+section.pop_courses{
+    width: 100%;
+    height: 100vh;
+    padding: 0 8%;
+    
+}
+.pop_courses .content{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    /* display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr); */
+    gap: 20px;
+    /* flex-direction: column; */
+    position: relative;
+}
+.pop_courses .content .container-fluid{
+    position: absolute;
+    top: 0;
+    width: 120%;
+    /* display: flex;
+    align-items: center;
+    justify-content: space-between; */
+    text-align: center;
+}
+.pop_courses .content .course{
+    border-radius: 9px;
+    width: 30%;
+    height: 500px;
+    display: flex;
+    /* background-color: red; */
+    position: relative;
+    /* border: 2px solid red; */
+    overflow: hidden;
+    flex-direction: column;
+}
+.pop_courses .content .course img{
+    /* position: absolute; */
+    /* background-color: red; */
+    width: 100%;
+    height: 50%;
+    border-radius:  0 0 9px 9px;
+}
+.card-body{
+    /* color: red; */
+    width: 100%;
+    height: 50%;
+    /* text-align: center; */
+    padding: 5px 9px;
+}
+/* .pop_courses .content .course img.img1{
+    transform: rotate3d(1, 2, 10deg);
+    transform: translate(30px);
+    left: 30px;
+    box-shadow: -20px 8px 30px black;
+    
+}
+.pop_courses .content .course img.img2{
+    right: 30px;
+    box-shadow: 20px 8px 30px black;
+    
+} */
+/* ................................... main hero  end here*/
+
+
+
+@media screen and(min-width:0px) and (max-width:700px){
+    .my-content,
+    .txt-banner,
+    .stripe{
+        display: none;
+    }
+    .vid-content{
+        top: 12%;
+        left: 60%;
+    }
+    .custom-nav .custom-nav-item a{
+        padding: 10px 20px;
+        background-color: #225470;
+    }
+    .custom-nav-item:hover{
+        background-color: none;
+        border:none;
+        border-radius:none;
+    }
+}
